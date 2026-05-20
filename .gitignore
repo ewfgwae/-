@@ -7,12 +7,13 @@
 # 2. 保留目录结构（关键！否则Git无法进入子目录）
 !*/
 
-# 3. 只放行 .c 和 .h 文件（全局，所有目录生效）
+# 3. 只放行 .c .h .pdsprj .workspace 文件（全局，所有目录生效）
 !*.c
 !*.h
-
+!*.pdsprj
+!*.workspace
 # 4. 保留 .gitignore 本身
-!.gitignore
+!*.gitignore
 # 忽略 MDK-ARM 根目录下的所有文件（包括 .txt）
 MDK-ARM/*
 # 但保留 MDK-ARM 下的子目录，以便进入其中找 .c/.h
